@@ -200,7 +200,8 @@
          }
          @media only screen and (min-width: 768px) {
          .background {
-         display: block;
+         display: flex;
+         flex-direction: column;
          width: 100%;
          background: #1a1a1e;
          }
@@ -251,14 +252,9 @@
          }
          .footer {
          background-color: #f4f4f5;
-         display: flex;
-         justify-content: center;
-         gap: 0.5rem;
-         bottom: 0;
-         left: 0;
          padding: 16px 0;
-         width: 100%;
          z-index: 10;
+         margin-top: auto;
          }
          .footer ul {
          text-align: center;
@@ -369,6 +365,35 @@
             class="image"
             src="https://airhub.airspacelink.com/images/undraw_connected_world_wuay%201.svg"
             />
+         <footer class="footer">
+            <ul>
+               <li>
+                  <a
+                     target="_blank"
+                     href="https://airspacelink.com/privacy-policy-portal"
+                     >Privacy Policy</a
+                     >
+               </li>
+               <li class="ellipse">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="4"
+                     height="4"
+                     viewBox="0 0 4 4"
+                     fill="none"
+                     >
+                     <circle opacity="0.4" cx="2" cy="2" r="2" fill="#131316" />
+                  </svg>
+               </li>
+               <li>
+                  <a
+                     target="_blank"
+                     href="https://airspacelink.com/terms-conditions-portal"
+                     >Terms of Service</a
+                     >
+               </li>
+            </ul>
+         </footer>
       </div>
       <div class="prompt-wrapper">
          <main class="_widget login-id">
@@ -466,35 +491,6 @@
                </div>
             </section>
          </main>         
-      </div>
-      <footer class="footer">
-         <ul>
-            <li>
-               <a
-                  target="_blank"
-                  href="https://airspacelink.com/privacy-policy-portal"
-                  >Privacy Policy</a
-                  >
-            </li>
-            <li class="ellipse">
-               <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="4"
-                  height="4"
-                  viewBox="0 0 4 4"
-                  fill="none"
-                  >
-                  <circle opacity="0.4" cx="2" cy="2" r="2" fill="#131316" />
-               </svg>
-            </li>
-            <li>
-               <a
-                  target="_blank"
-                  href="https://airspacelink.com/terms-conditions-portal"
-                  >Terms of Service</a
-                  >
-            </li>
-         </ul>
-      </footer>
+      </div>      
    </body>
 </html>
