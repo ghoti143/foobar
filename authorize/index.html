@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta name="ulp-version" content="1.39.0">
+    
+    
+    
+    <meta name="robots" content="noindex, nofollow">
+    
+    
+    <link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.116.0/css/main.cdn.min.css">
+    <style id="custom-styles-container">
+      
+        
+
+
+
+
+        
+          :root, .af-custom-form-container .af-form {
+    --primary-color: #0E7DE8;
+  }
+        
+      
+
+        
+          :root, .af-custom-form-container .af-form {
+    --button-font-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-border-color: #D4D4D8;
+    --social-button-border-color: #D4D4D8;
+    --radio-button-border-color: #D4D4D8;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-text-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --link-color: #0E7DE8;
+  }
+        
+      
+
+        
+          :root {
+    --title-font-color: #131316;
+  }
+        
+      
+
+        
+          :root {
+    --font-default-color: #131316;
+  }
+        
+      
+
+        
+          :root {
+    --widget-background-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --font-light-color: #A1A1AA;
+  }
+        
+      
+
+        
+          :root {
+    --input-text-color: #131316;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-color: #D4D4D8;
+    --border-default-color: #D4D4D8;
+  }
+        
+      
+
+        
+          :root {
+    --input-background-color: #F9F9F9;
+  }
+        
+      
+
+        
+          :root {
+    --icon-default-color: #65676e;
+  }
+        
+      
+
+        
+          :root {
+    --error-color: #EF4444;
+    --error-text-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --success-color: #21C55D;
+  }
+        
+      
+
+        
+          :root {
+    --base-focus-color: #0E7DE8;
+    --transparency-focus-color: rgba(14,125,232, 0.15);
+  }
+        
+      
+
+        
+          :root {
+    --base-hover-color: #65676e;
+    --transparency-hover-color: rgba(101,103,110, var(--hover-transparency-value));
+  }
+        
+      
+
+        
+      
+
+
+
+
+        
+          
+        
+      
+
+        
+          html, :root, .af-custom-form-container .af-form {
+    font-size: 16px;
+    --default-font-size: 16px;
+  }
+        
+      
+
+        
+          body {
+    --title-font-size: 1.5rem;
+    --title-font-weight: var(--font-bold-weight);
+  }
+        
+      
+
+        
+          .cd421dff5 {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .cfcc07aed {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+  .ulp-passkey-benefit-heading {
+    font-size: 1.15rem;
+  }
+        
+      
+
+        
+          .c89213e2d, .c0b792977 {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          body {
+    --ulp-label-font-size: 1rem;
+    --ulp-label-font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .ceb5f8ac4, .c70dd064f, [id^='ulp-container-'] a {
+    font-size: 0.875rem;
+    font-weight: var(--font-default-weight) !important;
+  }
+        
+      
+
+        
+          .c70dd064f, .ceb5f8ac4 {
+      text-decoration: underline;
+    }
+        
+      
+
+
+
+
+        
+          :root {
+    --button-border-width: 1px;
+    --social-button-border-width: 1px;
+    --radio-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --button-border-radius: 5px;
+    --radio-border-radius: 5px;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --input-border-radius: 4px;
+  }
+
+  .af-custom-form-container .af-form {
+    --border-radius: 4px;
+  }
+        
+      
+
+        
+          :root {
+    --border-radius-outer: 5px;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-width: 0px;
+  }
+        
+      
+
+        
+          body {
+    --shadow-component-outer: none;
+  }
+        
+      
+
+
+
+
+        
+          
+    body {
+      --logo-alignment: 0 auto;
+    }
+  
+        
+      
+
+        
+          
+    .c50cfd605 {
+      content: url('https://airhub.airspacelink.com/images/Portal-Pictorial%20Mark.svg');
+    }
+  
+        
+      
+
+        
+          body {
+    --logo-height: 52px;
+  }
+  .c50cfd605 {
+    height: var(--logo-height);
+  }
+  
+        
+      
+
+        
+          
+    body {
+      --header-alignment: center;
+    }
+  
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+        
+          .cc7f74138 {
+    --page-background-alignment: center;
+  }
+        
+      
+
+        
+          body {
+    --page-background-color: #ffffff;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+      
+    </style>
+    <style>
+    /* By default, hide features for javascript-disabled browsing */
+    /* We use !important to override any css with higher specificity */
+    /* It is also overriden by the styles in <noscript> in the header file */
+    .no-js {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  </style>
+  <noscript>
+    <style>
+      /* We use !important to override the default for js enabled */
+      /* If the display should be other than block, it should be defined specifically here */
+      .js-required { display: none !important; }
+      .no-js {
+        clip: auto;
+        clip-path: none;
+        height: auto;
+        overflow: auto;
+        position: static;
+        white-space: normal;
+        width: var(--prompt-width);
+      }
+    </style>
+  </noscript>
+    
+<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <style type="text/css">
+      body {
+        display: flex;
+      }
+
+      .background {
+        display: none;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .background {
+          display: block;
+          width: 100%;
+          background: #1a1a1e;
+        }
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 40%;
+        margin: 4rem 0 0 4.5rem;
+        gap: 1rem;
+        color: #e4e4e7;
+        font-family: Ubuntu, Sans-Serif;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        z-index: 1;
+      }
+
+      .headerTitle {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 125%;
+      }
+
+      .headerLogo {
+        width: 2.5rem;
+        height: 1.25rem;
+      }
+
+      .image {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .prompt-wrapper {
+        position: relative;
+        display: flex;
+        margin: auto;
+        min-width: 23rem;
+        height: 100%;
+        justify-content: center;
+        background-color: #ffffff;
+        overflow-y: auto;
+        z-index: 1;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .prompt-wrapper {
+          margin-left: auto;
+        }
+      }
+
+      .footer {
+        background-color: #f4f4f5;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        gap: 0.5rem;
+        bottom: 0;
+        left: 0;
+        padding: 16px 0;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .footer ul {
+        text-align: center;
+      }
+
+      .footer ul li {
+        display: inline-block;
+        margin: 0 4px;
+      }
+
+      .footer a {
+        color: #3f3f45;
+        font-family: Lato, Sans-Serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 125%;
+      }
+
+      .ellipse {
+        width: 0.25rem;
+        height: 0.25rem;
+        fill: #131316;
+      }
+    </style>
+    <title>Log in | AirHub Portal DEV</title>
+  </head>
+  <body class="_widget-auto-layout">
+    <div class="background">
+      <div class="header">
+        <div class="headerTitle">
+          <span class="headerLogo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="27"
+              viewBox="0 0 46 27"
+              fill="none"
+            >
+              <path
+                d="M19.2444 17.4448L12.974 23.7435L3 13.778L12.974 3.8125L32.9913 23.8125L43 13.8123L32.7835 3.8125L26.5849 10.1109"
+                stroke="#E4E4E7"
+                stroke-width="4"
+                stroke-miterlimit="10"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="168"
+              height="30"
+              viewBox="0 0 168 30"
+              fill="none"
+            >
+              <path
+                d="M7.23669 15.9359C5.77552 15.9359 4.61658 16.1387 3.75949 16.5444C2.90205 16.9503 2.47387 17.6169 2.47387 18.5441C2.47387 19.3944 2.76089 19.9978 3.33602 20.3554C3.91042 20.7129 4.62599 20.8913 5.48343 20.8913C6.14543 20.8913 6.72526 20.7804 7.22185 20.5582C7.7188 20.3363 8.1325 20.0416 8.46404 19.6741C8.79485 19.3076 9.04821 18.8772 9.2234 18.3847C9.39894 17.8919 9.49594 17.3656 9.51548 16.8053V15.9359H7.23669ZM0.633026 10.6335C1.33447 9.91844 2.16694 9.39221 3.13116 9.05372C4.09538 8.7163 5.07444 8.54688 6.06797 8.54688C8.09341 8.54688 9.55457 9.02033 10.4507 9.96654C11.3466 10.9135 11.7946 12.3529 11.7946 14.284V20.1088C11.7946 20.4954 11.8138 20.896 11.8533 21.3116C11.892 21.7273 11.9409 22.1081 11.9995 22.456H9.80793C9.72975 22.1473 9.68596 21.8041 9.67655 21.4276C9.66641 21.0507 9.66171 20.7172 9.66171 20.4279H9.60344C9.15499 21.1232 8.55597 21.6932 7.80639 22.1372C7.05608 22.5816 6.15556 22.8038 5.10339 22.8038C4.40231 22.8038 3.74502 22.7169 3.13116 22.5428C2.51767 22.3691 1.98163 22.1132 1.52413 21.7754C1.06627 21.4373 0.701071 21.0169 0.428528 20.5147C0.155622 20.0122 0.0195312 19.4329 0.0195312 18.776C0.0195312 17.6557 0.31162 16.7766 0.896159 16.1387C1.48034 15.5012 2.20603 15.0285 3.07289 14.7187C3.93938 14.4104 4.87464 14.2169 5.87795 14.1394C6.8809 14.0626 7.80132 14.0234 8.63922 14.0234H9.51548V13.6178C9.51548 12.6325 9.21869 11.8894 8.62438 11.3866C8.03007 10.8844 7.19723 10.6335 6.12624 10.6335C5.38571 10.6335 4.66037 10.7537 3.94952 10.9953C3.2383 11.2372 2.60996 11.6087 2.06487 12.1113L0.633026 10.6335Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M16.7642 8.91566H19.0433V22.4769H16.7642V8.91566ZM16.2383 3.61249C16.2383 3.16846 16.399 2.78223 16.7204 2.45342C17.0418 2.12534 17.4359 1.96094 17.9036 1.96094C18.3712 1.96094 18.7657 2.12534 19.0871 2.45342C19.4085 2.78223 19.5692 3.16846 19.5692 3.61249C19.5692 4.09564 19.4129 4.49156 19.1016 4.80062C18.79 5.10968 18.3904 5.26439 17.9036 5.26439C17.4168 5.26439 17.0172 5.10968 16.7059 4.80062C16.3939 4.49156 16.2383 4.09564 16.2383 3.61249Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M24.1126 12.1113C24.1126 11.4928 24.0931 10.9135 24.0544 10.3725C24.0149 9.83157 23.9961 9.33909 23.9961 8.8947H26.158C26.158 9.26191 26.1678 9.62912 26.1873 9.99561C26.2065 10.3628 26.2163 10.7397 26.2163 11.126H26.2753C26.4305 10.7975 26.6499 10.4788 26.9325 10.1697C27.2145 9.86064 27.5504 9.58569 27.9406 9.34375C28.3296 9.10218 28.768 8.90906 29.2551 8.7644C29.7419 8.61902 30.2679 8.54688 30.8328 8.54688C30.9888 8.54688 31.1445 8.55693 31.3005 8.57559C31.4565 8.59533 31.6121 8.63374 31.7681 8.69189L31.6219 10.9813C31.2321 10.865 30.8231 10.8072 30.3945 10.8072C28.992 10.8072 27.9742 11.2563 27.3415 12.1547C26.7081 13.0528 26.3918 14.2844 26.3918 15.8491V22.456H24.1126V12.1113Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M35.2686 18.8916C35.7163 19.4522 36.2082 19.8966 36.7442 20.2247C37.2799 20.5535 37.9567 20.7172 38.7751 20.7172C39.1254 20.7172 39.4809 20.6788 39.8414 20.6016C40.2015 20.5244 40.528 20.3984 40.8201 20.2247C41.1125 20.0506 41.346 19.8334 41.5211 19.5725C41.6967 19.3119 41.7843 18.9982 41.7843 18.6306C41.7843 18.2641 41.701 17.9644 41.536 17.7325C41.3702 17.5006 41.1512 17.3028 40.8787 17.1384C40.6054 16.9744 40.2942 16.8441 39.9434 16.7472C39.5931 16.651 39.2322 16.5641 38.8627 16.4866C38.2195 16.3516 37.606 16.1965 37.0218 16.0228C36.4373 15.8487 35.9259 15.6222 35.4875 15.3419C35.0496 15.0622 34.6989 14.6997 34.4357 14.2553C34.173 13.8113 34.0412 13.2409 34.0412 12.5453C34.0412 11.8891 34.1874 11.3094 34.4795 10.8072C34.772 10.3047 35.1611 9.88972 35.6486 9.56092C36.1354 9.23248 36.6805 8.98157 37.2846 8.80748C37.888 8.63374 38.5119 8.54688 39.1548 8.54688C40.1287 8.54688 41.0293 8.73999 41.8574 9.12623C42.6852 9.51282 43.333 10.1403 43.8003 11.0097L41.9012 12.2559C41.6091 11.7731 41.2244 11.3819 40.7473 11.0822C40.2695 10.7828 39.6904 10.6331 39.0085 10.6331C38.6969 10.6331 38.3806 10.6722 38.0591 10.7487C37.7374 10.8262 37.4496 10.9422 37.197 11.0965C36.9436 11.2516 36.7341 11.4494 36.569 11.6906C36.4033 11.9325 36.3204 12.2078 36.3204 12.5165C36.3204 12.8062 36.4127 13.0525 36.598 13.2556C36.7829 13.4581 37.0363 13.6372 37.3577 13.7915C37.6791 13.9466 38.049 14.0816 38.4681 14.1972C38.8866 14.3131 39.3198 14.4104 39.7682 14.4868C40.372 14.6031 40.9467 14.7528 41.4922 14.9359C42.0373 15.12 42.515 15.3666 42.9237 15.675C43.333 15.9844 43.6544 16.3706 43.8879 16.8344C44.1221 17.2982 44.2386 17.8678 44.2386 18.5437C44.2386 19.3169 44.083 19.9738 43.7714 20.5144C43.4597 21.0553 43.0453 21.495 42.5295 21.8328C42.0134 22.1713 41.4288 22.4172 40.7763 22.5719C40.1233 22.7263 39.4563 22.8034 38.7751 22.8034C37.606 22.8034 36.598 22.6247 35.7507 22.2675C34.9034 21.9104 34.1386 21.2488 33.457 20.2825L35.2686 18.8916Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M50.1932 15.675C50.1932 16.39 50.3051 17.0516 50.5291 17.66C50.7528 18.2688 51.0793 18.8 51.5082 19.2541C51.936 19.7078 52.4478 20.065 53.0417 20.3259C53.636 20.5869 54.3027 20.7172 55.0433 20.7172C55.7834 20.7172 56.4505 20.5869 57.0452 20.3259C57.6388 20.065 58.1502 19.7078 58.5791 19.2541C59.0073 18.8 59.3337 18.2688 59.5578 17.66C59.7815 17.0516 59.894 16.39 59.894 15.675C59.894 14.9607 59.7815 14.2987 59.5578 13.6903C59.3337 13.0815 59.0073 12.5506 58.5791 12.0962C58.1502 11.6428 57.6388 11.2853 57.0452 11.0244C56.4505 10.7634 55.7834 10.6331 55.0433 10.6331C54.3027 10.6331 53.636 10.7634 53.0417 11.0244C52.4478 11.2853 51.936 11.6428 51.5082 12.0962C51.0793 12.5506 50.7528 13.0815 50.5291 13.6903C50.3051 14.2987 50.1932 14.9607 50.1932 15.675ZM47.9141 8.89434H50.1932V10.865H50.2515C50.8748 10.1309 51.6001 9.56092 52.4286 9.1553C53.256 8.74932 54.167 8.54688 55.1605 8.54688C56.2315 8.54688 57.2102 8.72563 58.097 9.08279C58.983 9.44031 59.7377 9.93782 60.3613 10.575C60.9842 11.2125 61.4718 11.9659 61.8225 12.8353C62.1732 13.7047 62.3484 14.6512 62.3484 15.675C62.3484 16.6994 62.1732 17.6456 61.8225 18.515C61.4718 19.3844 60.9896 20.1378 60.3761 20.7753C59.7623 21.4125 59.0366 21.9104 58.1991 22.2675C57.3615 22.6247 56.465 22.8034 55.5109 22.8034C54.2839 22.8034 53.2071 22.5378 52.282 22.0069C51.3569 21.4757 50.6797 20.8238 50.2515 20.0506H50.1932V29.0629H47.9141V8.89434Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M72.8773 15.9359C71.4161 15.9359 70.2572 16.1387 69.4005 16.5444C68.5427 16.9503 68.1145 17.6169 68.1145 18.5441C68.1145 19.3944 68.4019 19.9978 68.9766 20.3554C69.551 20.7129 70.2666 20.8913 71.124 20.8913C71.786 20.8913 72.3659 20.7804 72.8625 20.5582C73.3594 20.3363 73.7731 20.0416 74.1046 19.6741C74.4355 19.3076 74.6888 18.8772 74.864 18.3847C75.0395 17.8919 75.1365 17.3656 75.1565 16.8053V15.9359H72.8773ZM66.2736 10.6335C66.9747 9.91844 67.8076 9.39221 68.7718 9.05372C69.736 8.7163 70.7151 8.54688 71.7086 8.54688C73.734 8.54688 75.1952 9.02033 76.0913 9.96654C76.9868 10.9135 77.4356 12.3529 77.4356 14.284V20.1088C77.4356 20.4954 77.4544 20.896 77.4939 21.3116C77.5326 21.7273 77.5815 22.1081 77.6397 22.456H75.4485C75.3707 22.1473 75.3269 21.8041 75.3168 21.4276C75.307 21.0507 75.3023 20.7172 75.3023 20.4279H75.244C74.7956 21.1232 74.1969 21.6932 73.447 22.1372C72.697 22.5816 71.7962 22.8038 70.744 22.8038C70.0429 22.8038 69.3856 22.7169 68.7718 22.5428C68.1583 22.3691 67.6222 22.1132 67.1651 21.7754C66.7069 21.4373 66.3417 21.0169 66.0692 20.5147C65.7962 20.0122 65.6602 19.4329 65.6602 18.776C65.6602 17.6557 65.9522 16.7766 66.5364 16.1387C67.1213 15.5012 67.8467 15.0285 68.7135 14.7187C69.58 14.4104 70.5153 14.2169 71.5186 14.1394C72.5219 14.0626 73.4423 14.0234 74.2798 14.0234H75.1565V13.6178C75.1565 12.6325 74.8593 11.8894 74.265 11.3866C73.6707 10.8844 72.8382 10.6335 71.7669 10.6335C71.0263 10.6335 70.301 10.7537 69.5901 10.9953C68.8786 11.2372 68.2506 11.6087 67.7055 12.1113L66.2736 10.6335Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M91.9251 12.2847C91.4379 11.7053 90.912 11.2853 90.3474 11.0244C89.782 10.7638 89.1587 10.6331 88.4772 10.6331C87.7175 10.6331 87.0457 10.7638 86.4612 11.0244C85.8766 11.2853 85.3945 11.6475 85.0148 12.1113C84.6348 12.5747 84.347 13.1106 84.1527 13.719C83.9576 14.3275 83.8606 14.9797 83.8606 15.675C83.8606 16.3706 83.9724 17.0225 84.1965 17.6313C84.4205 18.2397 84.7322 18.776 85.1314 19.2394C85.5306 19.7031 86.0127 20.0653 86.5781 20.3259C87.1427 20.5869 87.7757 20.7172 88.4772 20.7172C89.9771 20.7172 91.136 20.1576 91.9544 19.0369L93.649 20.6303C92.9866 21.3841 92.207 21.9344 91.3116 22.2822C90.4154 22.6297 89.4707 22.8038 88.4772 22.8038C87.425 22.8038 86.4612 22.6297 85.5845 22.2822C84.7083 21.9344 83.963 21.4419 83.3495 20.8041C82.7357 20.1669 82.2583 19.4131 81.9177 18.5437C81.5764 17.6747 81.4062 16.7185 81.4062 15.675C81.4062 14.6516 81.5764 13.7047 81.9177 12.8353C82.2583 11.9659 82.7404 11.2128 83.364 10.575C83.9869 9.93782 84.7322 9.44031 85.599 9.08279C86.4655 8.72563 87.425 8.54688 88.4772 8.54688C89.4895 8.54688 90.4494 8.72061 91.3554 9.06843C92.2613 9.41626 93.0547 9.9572 93.7366 10.6913L91.9251 12.2847Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M107.143 14.4581C107.104 13.2991 106.724 12.3719 106.003 11.6766C105.282 10.9809 104.289 10.6335 103.023 10.6335C101.756 10.6335 100.734 10.9809 99.9549 11.6766C99.1753 12.3719 98.708 13.2991 98.5524 14.4581H107.143ZM109.1 19.9932C108.282 21.0363 107.386 21.7653 106.412 22.181C105.438 22.596 104.308 22.8038 103.023 22.8038C101.951 22.8038 100.987 22.6157 100.13 22.2388C99.2726 21.8623 98.5473 21.3551 97.9533 20.7172C97.359 20.08 96.9015 19.3266 96.5798 18.4572C96.2587 17.5878 96.0977 16.6607 96.0977 15.6753C96.0977 14.6319 96.2732 13.6717 96.6239 12.7919C96.9743 11.9131 97.4611 11.1601 98.0851 10.5319C98.708 9.90408 99.4478 9.41626 100.305 9.06843C101.163 8.72097 102.098 8.54688 103.11 8.54688C104.065 8.54688 104.941 8.70625 105.74 9.025C106.539 9.34375 107.226 9.80752 107.8 10.4159C108.374 11.0247 108.818 11.7685 109.129 12.6472C109.441 13.5263 109.597 14.526 109.597 15.6466V16.3706H98.5524C98.5911 16.9503 98.7322 17.506 98.9762 18.0372C99.2191 18.5685 99.5354 19.0323 99.9259 19.4282C100.315 19.8241 100.773 20.1378 101.299 20.3697C101.825 20.6016 102.399 20.7172 103.023 20.7172C104.016 20.7172 104.854 20.5435 105.536 20.1956C106.217 19.8482 106.831 19.3367 107.377 18.66L109.1 19.9932Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M116.182 0.5625H113.902V22.4695H116.182V0.5625Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M121.538 8.91566H123.817V22.4769H121.538V8.91566ZM121.012 3.61249C121.012 3.16846 121.173 2.78223 121.494 2.45342C121.815 2.12534 122.21 1.96094 122.677 1.96094C123.145 1.96094 123.54 2.12534 123.861 2.45342C124.182 2.78223 124.343 3.16846 124.343 3.61249C124.343 4.09564 124.187 4.49156 123.875 4.80062C123.563 5.10968 123.164 5.26439 122.677 5.26439C122.19 5.26439 121.791 5.10968 121.479 4.80062C121.167 4.49156 121.012 4.09564 121.012 3.61249Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M128.945 12.1113C128.945 11.4928 128.925 10.9135 128.886 10.3725C128.847 9.83157 128.828 9.33909 128.828 8.8947H130.99C130.99 9.26191 131 9.62912 131.019 9.99561C131.039 10.3628 131.048 10.7397 131.048 11.126H131.107C131.263 10.7975 131.482 10.4788 131.765 10.1697C132.047 9.86064 132.382 9.58569 132.773 9.34375C133.162 9.10218 133.6 8.90906 134.087 8.7644C134.574 8.61902 135.1 8.54688 135.665 8.54688C136.561 8.54688 137.335 8.6822 137.988 8.95249C138.64 9.22314 139.181 9.60004 139.61 10.0828C140.038 10.5656 140.355 11.1504 140.559 11.8356C140.764 12.5219 140.866 13.2703 140.866 14.0816V22.456H138.587V14.3135C138.587 13.1738 138.333 12.2753 137.827 11.6184C137.321 10.9619 136.532 10.6335 135.461 10.6335C134.72 10.6335 134.082 10.7591 133.547 11.01C133.011 11.2613 132.572 11.6184 132.232 12.0822C131.891 12.5456 131.637 13.0963 131.472 13.7341C131.306 14.3713 131.224 15.077 131.224 15.8491V22.456H128.945V12.1113Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M145.75 0.5625H148.029V14.8776L154.253 8.90818H157.496L150.893 15.08L158.168 22.4695H154.808L148.029 15.341V22.4695H145.75V0.5625Z"
+                fill="#E4E4E7"
+              />
+              <path
+                d="M167.215 22.5126H166.715V20.6593H166.703L165.979 22.5126H165.644L164.914 20.6593H164.901V22.5126H164.408V20.0254H165.126L165.815 21.7882L166.502 20.0254H167.215V22.5126ZM163.903 20.4601H163.13V22.5126H162.637V20.4601H161.852V20.0254H163.903V20.4601Z"
+                fill="#E4E4E7"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div>Uniting the Skies, Streamlining Workflows</div>
+      </div>
+
+      <img
+        class="image"
+        src="https://airhub.airspacelink.com/images/undraw_connected_world_wuay%201.svg"
+      />
+    </div>
+    
+    <div class="prompt-wrapper"><main class="_widget login-id">
+  <section class="cae3413dc _prompt-box-outer ca4146d86">
+    <div class="ce204bcb9 c7d82ce88">
+      
+        <input type="hidden" id="passkey-config-json" value="{&#34;publicKey&#34;:{&#34;challenge&#34;:&#34;ZT112czfBQzJodigF7dO-uqSKVW8FlAscaF3vbvsHzw&#34;}}">
+      
+    
+      
+    
+      <div class="c1e11856b">
+        <header class="ca3d4e5e6 c42c4b9f9">
+          <div title="Airspace Link, Inc - DEV" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+        
+          <img class="c50cfd605 c63f9d186" id="prompt-logo-center" src="https://airhub-prod.s3.us-east-2.amazonaws.com/ASLLogoStack.png" alt="Airspace Link, Inc - DEV">
+        
+          
+            <h1 class="cc1bd00fe cf4bb9070">Welcome</h1>
+          
+        
+          <div class="cd421dff5 c3889d626">
+            <p class="c45f31184 ca3398b0a">By logging in you agree to the Privacy Policy &amp; Terms of Service.</p>
+          </div>
+        </header>
+      
+        <div class="cfcc07aed c07419955">
+          
+        
+          
+            <div class="c70a5071f c14212349">
+              <div class="c96c93a41">
+                
+              
+                
+                  <form method="POST" class="cc3f2d70c _form-login-id" data-form-primary="true">
+                    <input type="hidden" name="state" value="hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">
+                  
+                    
+                  
+                    
+                  
+                    
+                      <input type="hidden" name="allow-passkeys" id="allow-passkeys" value="true">
+                    
+                  
+                    <div class="c70a5071f c14212349">
+                      <div class="c96c93a41">
+                        
+                      
+                        
+                          
+                            <div class="input-wrapper _input-wrapper">
+                              <div class="cd2c25b7e c4e79ceaf text ce618ca20" data-action-text="" data-alternate-action-text="">
+                                <label class="c450395c0 no-js c837a9c4b c469bbeec" for="username">
+                                  Email address
+                                </label>
+                              
+                                <input class="input c2053dbb5 c10f8401f" inputMode="email" name="username" id="username" type="text" value="" required autoComplete="username webauthn" autoCapitalize="none" spellCheck="false" autoFocus>
+                              
+                                <div class="c450395c0 js-required c837a9c4b c469bbeec" data-dynamic-label-for="username" aria-hidden="true">
+                                  Email address*
+                                </div>
+                              </div>
+                            
+                              
+                            </div>
+                          
+                        
+                      
+                        
+                      
+                        
+                      </div>
+                    </div>
+                  
+                    
+                      
+                        <p class="c8fdce3c3 c2bd9edda">
+                          
+                            <a class="c70dd064f c32590db8 c3ebcfad9" href="/u/login/password-reset-start/Username-Password-Authentication?state=hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">Can&#39;t log in to your account?</a>
+                          
+                        </p>
+                      
+                    
+                  
+                    <input class="hide" type="password" autoComplete="off" tabindex="-1" aria-hidden="true">
+                  
+                    <input type="hidden" id="js-available" name="js-available" value="false">
+                  
+                    <input type="hidden" id="webauthn-available" name="webauthn-available" value="false">
+                  
+                    <input type="hidden" id="is-brave" name="is-brave" value="false">
+                  
+                    <input type="hidden" id="webauthn-platform-available" name="webauthn-platform-available" value="false">
+                  
+                    
+                  
+                    <div class="c5d45fb63">
+                      
+                        <button type="submit" name="action" value="default" class="c89213e2d cec57cc42 c4630d56b c7da8bd2b _button-login-id" data-action-button-primary="true">Continue</button>
+                      
+                    </div>
+                  </form>
+                
+              </div>
+            </div>
+          
+        
+          
+        
+          
+            <div class="ulp-alternate-action  _alternate-action __s16nu9">
+              <p class="c45f31184 ca3398b0a c0db53cd4">Don&#39;t have an account?
+                <a class="c70dd064f c3ebcfad9" href="/u/signup/identifier?state=hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">Sign up</a>
+              </p>
+            </div>
+          
+        
+          
+        
+          
+            <div class="cf427ce24 c31c578a3">
+              <span>Or</span>
+            </div>
+          
+        
+          
+            <div class="js-required ulp-passkey-button _passkey-button-container">
+              <div>
+                
+                  <form method="POST" class="cadbdcf86 _form-passkey-challenge" data-form-primary="true">
+                    <input type="hidden" name="state" value="hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">
+                  
+                    <input type="hidden" id="passkey" name="passkey">
+                  
+                    <input type="hidden" id="action" name="action" value="default">
+                  
+                    <div class="c5d45fb63">
+                      
+                    </div>
+                  </form>
+                
+              
+                <button type="submit" name="action" value="default" class="c89213e2d c14d0136e c846abfed passkey-begin-button passkey-challenge-button">
+                  <span class="c30eb6583 passkey-logo passkey"></span>
+                
+                  <span class="c47f84d48">Continue with a passkey</span>
+                </button>
+              </div>
+            </div>
+          
+        
+          
+            
+              <span class="passkey-button-spacer js-required "></span>
+            
+          
+            <div class="c3e2f4433 ce8299bbd">
+              
+            
+              
+                <form method="post" data-provider="google" class="c0b792977 c685bdd1f cc5113108" data-form-secondary="true">
+                  <input type="hidden" name="state" value="hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">
+                
+                  <input type="hidden" name="connection" value="google-oauth2">
+                
+                  <button type="submit" class="cd98268b0 cb78c46a2 c04748efe" data-provider="google" data-action-button-secondary="true">
+                    
+                      <span class="c6bc48223 cb8b4d69e" data-provider="google"></span>
+                    
+                  
+                    <span class="c47f84d48">Continue with Google</span>
+                  </button>
+                </form>
+              
+                <form method="post" data-provider="apple" class="c0b792977 c685bdd1f c6b8d34e2" data-form-secondary="true">
+                  <input type="hidden" name="state" value="hKFo2SBmUjhSbTdBa1p6QV80MGxfNW1uUHVoSHplbEpmMnFCT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHhERF9DME94d29EbUNjZjBFMEpYMVNiSHhocjFZaFJqo2NpZNkgazY2RkxudG9nR1hYWGlmWmtCcUxtYnhLU3hxcWZYdFg">
+                
+                  <input type="hidden" name="connection" value="apple">
+                
+                  <button type="submit" class="cd98268b0 cb78c46a2 c31c3a7f9" data-provider="apple" data-action-button-secondary="true">
+                    
+                      <span class="c6bc48223 cb8b4d69e" data-provider="apple"></span>
+                    
+                  
+                    <span class="c47f84d48">Continue with Apple</span>
+                  </button>
+                </form>
+              
+            
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    
+  </section>
+</main>
+<script id="client-scripts">
+window.ulpFlags = {"enable_ulp_wcag_compliance":false};!function(){var e,t,C,S,F,T,k,L,n,r,a={exports:function(e,t){return"object"==typeof e.ulpFlags&&null!==e.ulpFlags?e.ulpFlags:{}}}.exports(window,document),i=((e={}).exports=function(n,a){var r={},i={};function u(e,t){if(e.classList)return e.classList.add(t);var n=e.className.split(" ");-1===n.indexOf(t)&&(n.push(t),e.className=n.join(" "))}function o(e,t,n,r){return e.addEventListener(t,n,r)}function c(e){return"string"==typeof e}function l(e,t){return c(e)?a.querySelector(e):e.querySelector(t)}function s(e,t){if(e.classList)return e.classList.remove(t);var n=e.className.split(" "),r=n.indexOf(t);-1!==r&&(n.splice(r,1),e.className=n.join(" "))}function f(e,t){return e.getAttribute(t)}function d(e,t,n){return e.setAttribute(t,n)}var e=["text","number","email","password","tel","url"],t="select,textarea,"+e.map(function(e){return'input[type="'+e+'"]'}).join(",");return{addClass:u,toggleClass:function(e,t,n){if(!0===n||!1===n)return r=e,a=t,!0!==n?s(r,a):u(r,a);var r,a;if(e.classList)return e.classList.toggle(t);var i=e.className.split(" "),o=i.indexOf(t);-1!==o?i.splice(o,1):i.push(t),e.className=i.join(" ")},hasClass:function(e,t){return e.classList?e.classList.contains(t):-1!==e.className.split(" ").indexOf(t)},addClickListener:function(e,t){return o(e,"click",t)},addEventListener:o,getAttribute:f,hasAttribute:function(e,t){return e.hasAttribute(t)},getElementById:function(e){return a.getElementById(e)},getParent:function(e){return e.parentNode},isString:c,loadScript:function(e,t){var n=a.createElement("script");for(var r in t)r.startsWith("data-")?n.dataset[r.replace("data-","")]=t[r]:n[r]=t[r];n.src=e,a.body.appendChild(n)},removeScript:function(e){a.querySelectorAll('script[src="'+e+'"]').forEach(function(e){e.remove()})},poll:function(e){var i=e.interval||2e3,t=e.url||n.location.href,o=e.condition||function(){return!0},u=e.onSuccess||function(){},c=e.onError||function(){};return setTimeout(function r(){var a=new XMLHttpRequest;return a.open("GET",t),a.setRequestHeader("Accept","application/json"),a.onload=function(){if(200===a.status){var e="application/json"===a.getResponseHeader("Content-Type").split(";")[0]?JSON.parse(a.responseText):a.responseText;return o(e)?u():setTimeout(r,i)}if(429!==a.status)return c({status:a.status,responseText:a.responseText});var t=1e3*Number.parseInt(a.getResponseHeader("X-RateLimit-Reset")),n=t-(new Date).getTime();return setTimeout(r,i<n?n:i)},a.send()},i)},querySelector:l,querySelectorAll:function(e,t){var n=c(e)?a.querySelectorAll(e):e.querySelectorAll(t);return Array.prototype.slice.call(n)},removeClass:s,removeElement:function(e){return e.remove()},setAttribute:d,removeAttribute:function(e,t){return e.removeAttribute(t)},swapAttributes:function(e,t,n){var r=f(e,t),a=f(e,n);d(e,n,r),d(e,t,a)},setGlobalFlag:function(e,t){r[e]=!!t},getGlobalFlag:function(e){return!!r[e]},setSubmittedForm:function(e,t){i[e]=t},getSubmittedForm:function(e){return i[e]},preventFormSubmit:function(e){e.stopPropagation(),e.preventDefault()},matchMedia:function(e){return"function"!=typeof n.matchMedia&&n.matchMedia(e).matches},dispatchEvent:function(e,t,n){var r;"function"!=typeof Event?(r=a.createEvent("Event")).initCustomEvent(t,n,!1):r=new Event(t,{bubbles:n}),e.dispatchEvent(r)},timeoutPromise:function(e,a){return new Promise(function(t,n){var r=setTimeout(function(){n(new Error("timeoutPromise: promise timed out"))},e);a.then(function(e){clearTimeout(r),t(e)},function(e){clearTimeout(r),n(e)})})},createMutationObserver:function(e){return"undefined"==typeof MutationObserver?null:new MutationObserver(e)},consoleWarn:function(){(console.warn||console.log).apply(console,arguments)},getConfigJson:function(e){try{var t=l(e);if(!t)return null;var n=t.value;return n?JSON.parse(n):null}catch(e){return null}},getCSSVariable:function(e){return getComputedStyle(a.documentElement).getPropertyValue(e)},removeAndTrimString:function(e,t){var n=new RegExp(t,"g"),r=e.replace(n,"");return r=r.replace(/\s+/g,"  ").trim()},htmlEncode:function(e){var t=a.createTextNode(e),n=a.createElement("span");return n.appendChild(t),n.innerHTML||""},setTimeout:setTimeout,globalWindow:n,SUPPORTED_INPUT_TYPES:e,ELEMENT_TYPE_SELECTOR:t,RUN_INIT:!0}},e.exports)(window,document),o=function(){var e={};function v(e){if(!("string"==typeof e||e instanceof String)){var t=typeof e;throw null===e?t="null":"object"===t&&(t=e.constructor.name),new TypeError("Expected a string but received a "+t)}}function m(e,t){var n,r;v(e),r="object"==typeof t?(n=t.min||0,t.max):(n=t,arguments[2]);var a=encodeURI(e).split(/%..|./).length-1;return n<=a&&(void 0===r||a<=r)}function h(e,t){for(var n in void 0===e&&(e={}),t)void 0===e[n]&&(e[n]=t[n]);return e}var g={require_tld:!0,allow_underscores:!1,allow_trailing_dot:!1,allow_numeric_tld:!1,allow_wildcard:!1,ignore_max_length:!1},t="(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",n="("+t+"[.]){3}"+t,r=new RegExp("^"+n+"$"),a="(?:[0-9a-fA-F]{1,4})",i=new RegExp("^((?:"+a+":){7}(?:"+a+"|:)|(?:"+a+":){6}(?:"+n+"|:"+a+"|:)|(?:"+a+":){5}(?::"+n+"|(:"+a+"){1,2}|:)|(?:"+a+":){4}(?:(:"+a+"){0,1}:"+n+"|(:"+a+"){1,3}|:)|(?:"+a+":){3}(?:(:"+a+"){0,2}:"+n+"|(:"+a+"){1,4}|:)|(?:"+a+":){2}(?:(:"+a+"){0,3}:"+n+"|(:"+a+"){1,5}|:)|(?:"+a+":){1}(?:(:"+a+"){0,4}:"+n+"|(:"+a+"){1,6}|:)|(?::((?::"+a+"){0,5}:"+n+"|(?::"+a+"){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$");function b(e,t){return void 0===t&&(t=""),v(e),(t=String(t))?"4"===t?r.test(e):"6"===t&&i.test(e):b(e,4)||b(e,6)}var w={allow_display_name:!1,allow_underscores:!1,require_display_name:!1,allow_utf8_local_part:!0,require_tld:!0,blacklisted_chars:"",ignore_max_length:!1,host_blacklist:[],host_whitelist:[]},y=/^([^\x00-\x1F\x7F-\x9F\cX]+)</i,_=/^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~]+$/i,x=/^[a-z\d]+$/,E=/^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f]))*$/i,A=/^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\u00A1-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+$/i,C=/^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*$/i,S=254;function o(e,t){if(v(e),(t=h(t,w)).require_display_name||t.allow_display_name){var n=e.match(y);if(n){var r=n[1];if(e=e.replace(r,"").replace(/(^<|>$)/g,""),r.endsWith(" ")&&(r=r.slice(0,-1)),!function(e){var t=e.replace(/^"(.+)"$/,"$1");if(!t.trim())return!1;if(/[\.";<>]/.test(t)){if(t===e)return!1;if(t.split('"').length!==t.split('\\"').length)return!1}return!0}(r))return!1}else if(t.require_display_name)return!1}if(!t.ignore_max_length&&e.length>S)return!1;var a=e.split("@"),i=a.pop(),o=i.toLowerCase();if(t.host_blacklist.includes(o))return!1;if(0<t.host_whitelist.length&&!t.host_whitelist.includes(o))return!1;var u=a.join("@");if(t.domain_specific_validation&&("gmail.com"===o||"googlemail.com"===o)){var c=(u=u.toLowerCase()).split("+")[0];if(!m(c.replace(/\./g,""),{min:6,max:30}))return!1;for(var l=c.split("."),s=0;s<l.length;s++)if(!x.test(l[s]))return!1}if(!(!1!==t.ignore_max_length||m(u,{max:64})&&m(i,{max:254})))return!1;if(!function(e,t){v(e),(t=h(t,g)).allow_trailing_dot&&"."===e[e.length-1]&&(e=e.substring(0,e.length-1)),!0===t.allow_wildcard&&0===e.indexOf("*.")&&(e=e.substring(2));var n=e.split("."),r=n[n.length-1];if(t.require_tld){if(n.length<2)return!1;if(!t.allow_numeric_tld&&!/^([a-z\u00A1-\u00A8\u00AA-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{2,}|xn[a-z0-9-]{2,})$/i.test(r))return!1;if(/\s/.test(r))return!1}return!(!t.allow_numeric_tld&&/^\d+$/.test(r))&&n.every(function(e){return!(63<e.length&&!t.ignore_max_length||!/^[a-z_\u00a1-\uffff0-9-]+$/i.test(e)||/[\uff01-\uff5e]/.test(e)||/^-|-$/.test(e)||!t.allow_underscores&&/_/.test(e))})}(i,{require_tld:t.require_tld,ignore_max_length:t.ignore_max_length,allow_underscores:t.allow_underscores})){if(!t.allow_ip_domain)return!1;if(!b(i)){if(!i.startsWith("[")||!i.endsWith("]"))return!1;var f=i.slice(1,-1);if(0===f.length||!b(f))return!1}}if('"'===u[0])return u=u.slice(1,u.length-1),t.allow_utf8_local_part?C.test(u):E.test(u);for(var d=t.allow_utf8_local_part?A:_,p=(l=u.split("."),0);p<l.length;p++)if(!d.test(l[p]))return!1;return!t.blacklisted_chars||-1===u.search(new RegExp("["+t.blacklisted_chars+"]+","g"))}return e.exports=function(e,t){return{ulpRequiredFunction:function(e,t){return!t||!!e.value},ulpEmailValidationFunction:function(e,t){return!t||!e.value||!!o(e.value)},ulpPatternCheckFunction:function(e,t){return!t||!e.value||function(e){if("password"===e.name)return!0;var t=e.getAttribute("pattern");return!t||null!==e.value.match(t)}(e)}}},e.exports}()(window,document),u={exports:function(e,t){for(var i="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",s=new Uint8Array(256),o=0;o<i.length;o++)s[i.charCodeAt(o)]=o;function u(e){var t,n=new Uint8Array(e),r=n.length,a="";for(t=0;t<r;t+=3)a+=i[n[t]>>2],a+=i[(3&n[t])<<4|n[t+1]>>4],a+=i[(15&n[t+1])<<2|n[t+2]>>6],a+=i[63&n[t+2]];return r%3==2?a=a.substring(0,a.length-1):r%3==1&&(a=a.substring(0,a.length-2)),a}function n(){return navigator&&navigator.credentials&&"undefined"!=typeof PublicKeyCredential}return{base64URLEncode:u,base64URLDecode:function(e){var t,n,r,a,i,o=.75*e.length,u=e.length,c=0,l=new Uint8Array(o);for(t=0;t<u;t+=4)n=s[e.charCodeAt(t)],r=s[e.charCodeAt(t+1)],a=s[e.charCodeAt(t+2)],i=s[e.charCodeAt(t+3)],l[c++]=n<<2|r>>4,l[c++]=(15&r)<<4|a>>2,l[c++]=(3&a)<<6|63&i;return l.buffer},publicKeyCredentialToJSON:function e(t){if(t instanceof Array){var n=[];for(o=0;o<t.length;o+=1)n.push(e(t[o]));return n}if(t instanceof ArrayBuffer)return u(t);if(t instanceof Object){var r={};for(var a in t)r[a]=e(t[a]);return r}return t},str2ab:function(e){for(var t=new ArrayBuffer(e.length),n=new Uint8Array(t),r=0,a=e.length;r<a;r++)n[r]=e.charCodeAt(r);return t},isWebAuthnAvailable:n,isWebauthnPlatformAuthenticatorAvailableAsync:function(e){return n()?e(1e3,PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()):Promise.resolve(!1)}}}}.exports(window,document);({exports:function(e,r,a,t){var n=e(".c633902b8"),i=e("#alert-trigger"),o=e(".c805ffa16"),u=e(".c12692252"),c=!1;i&&u&&n&&t(n,function(e){var t=e.target===i,n=u.contains(e.target);return t&&!c?(r(o,"show"),void(c=!0)):t&&c||c&&!n?(a(o,"show"),void(c=!1)):void 0})}}).exports(i.querySelector,i.addClass,i.removeClass,i.addClickListener),(C="recaptcha_v2",S="recaptcha_enterprise",F="hcaptcha",T="friendly_captcha",k="arkose",L="auth0_v2",(t={}).exports=function(i,o,a,u,c,l,s,f){var d=500,p=3,v=0,m=a("div[data-captcha-sitekey]"),h=a(".ulp-captcha-client-error"),t=a("div[data-captcha-sitekey] input");function g(){switch(y()){case C:return window.grecaptcha;case S:return window.grecaptcha.enterprise;case F:return window.hcaptcha;case T:return window.friendlyChallenge;case k:return window.arkose;case L:return window.turnstile}}function b(){return a(function(){switch(y()){case C:case S:return"#ulp-recaptcha";case F:return"#ulp-hcaptcha";case T:return"#ulp-friendly-captcha";case k:return"#ulp-arkose";case L:return"#ulp-auth0-v2-captcha"}}())}function w(){return m.getAttribute("data-captcha-lang")}function y(){return m.getAttribute("data-captcha-provider")}function _(){return m.getAttribute("data-captcha-sitekey")}function x(){return a('form[data-form-primary="true"]')}function E(e){return t.value=e}function A(){var e=g(),t=l("--ulp-captcha-widget-theme")||"light";if(y()===T)"dark"===t&&u(a(".frc-captcha"),"dark"),(r=e.autoWidget).opts.language=w(),r.opts.doneCallback=function(e){E(e)};else{var n={sitekey:_(),theme:t,"expired-callback":function(){E(""),u(m,"cc99b320c"),e.reset(r)},callback:function(e){E(e),c(m,"cc99b320c")}};y()===L&&(n.language=w(),n.retry="never",n.size="flexible",n["response-field"]=!1,n["error-callback"]=function(e){return console.error("ERROR: Auth Challenge Error Code",e),E(""),v<p?(v++,g().reset(r)):(h.innerHTML=h.innerHTML.replace("#{errorCode}",f(e)),u(m,"cc99b320c"),c(h,"hide")),!0});var r=e.render(b(),n)}}m&&function(){var e="captchaCallback_"+Math.floor(1000001*Math.random()),t=y(),n={async:!0,defer:!0},r=function(e,t,n,r){switch(y()){case C:return"https://www.recaptcha.net/recaptcha/api.js?render=explicit&hl="+e+"&onload="+t;case S:return"https://www.recaptcha.net/recaptcha/enterprise.js?render=explicit&hl="+e+"&onload="+t;case F:return"https://js.hcaptcha.com/1/api.js?render=explicit&hl="+e+"&onload="+t;case T:return"https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.14/widget.min.js";case k:return"https://"+n+".arkoselabs.com/v2/"+r+"/api.js";case L:return"https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload="+t}}(w(),e,m.getAttribute("data-captcha-client-subdomain"),_());if(t===k||t===L){n["data-callback"]=e,n.onerror=function(){if(v<p)return o(r),i(r,n),void v++;o(r),E("BYPASS_CAPTCHA")};var a=function(e){var t,n;t=e,n=function(e){setTimeout(function(){t.run()},d),e.preventDefault()},x().addEventListener("submit",n),t.setConfig({onCompleted:function(e){E(e.token),x().submit()},onError:function(e){return fetch("https://status.arkoselabs.com/api/v2/status.json").then(function(e){return e.json()}).then(function(e){var t=e.status.indicator;return"none"===t}).catch(function(e){return!1}).then(function(e){if(e&&v<p)return t.reset(),new Promise(function(e){setTimeout(function(){e(t.run())},d),v++});E("BYPASS_CAPTCHA"),x().removeEventListener("submit",n)})}})};t===L&&(a=function(){A()}),window[e]=a}else window[e]=function(){delete window[e],A()},t===T&&(u(b(),"frc-captcha"),s(b(),"data-sitekey",_()),n.onload=window[e]);i(r,n)}()},t.exports)(i.loadScript,i.removeScript,i.querySelector,i.addClass,i.removeClass,i.getCSSVariable,i.setAttribute,i.htmlEncode),((n={}).exports=function(r,e,a,i,o,u,c,l,n,s,t){if(!t.enable_ulp_wcag_compliance){if(r("body._simple-labels"))return e(".c450395c0.no-js").forEach(function(e){o(e,"no-js")}),void e(".c450395c0.js-required").forEach(function(e){i(e,"hide")});e(".cd2c25b7e:not(.c70a631ce):not(disabled)").forEach(function(e){i(e,"c7e0fe4c8");var t,n=r(e,".input");n.value&&i(e,"c79583e74"),a(e,"change",f),a(n,"blur",f),a(n,"animationstart",d),t=n,c(function(){t.value&&l(t,"change",!0)},100)})}function f(e){var t=e.target,n=u(t);t.value||s(t,"data-autofilled")?i(n,"c79583e74"):o(n,"c79583e74")}function d(e){var t=e.target;"onAutoFillStart"===e.animationName&&(n(t,"data-autofilled",!0),l(e.target,"change",!0),a(t,"keyup",p,{once:!0}))}function p(e){var t=e.target;n(t,"data-autofilled","")}},n.exports)(i.querySelector,i.querySelectorAll,i.addEventListener,i.addClass,i.removeClass,i.getParent,i.setTimeout,i.dispatchEvent,i.setAttribute,i.getAttribute,a),{exports:function(e,t,r,a,i,o,u,c){function n(e){var t=r("submitted"),n=i("submittedForm");a("submitted",!0),o("submittedForm",e.currentTarget),t&&n&&n===e.currentTarget?u(e):"apple"===c(e.target,"data-provider")&&setTimeout(function(){a("submitted",!1)},2e3)}var l=e("form");l&&l.forEach(function(e){t(e,"submit",n)})}}.exports(i.querySelectorAll,i.addEventListener,i.getGlobalFlag,i.setGlobalFlag,i.getSubmittedForm,i.setSubmittedForm,i.preventFormSubmit,i.getAttribute),{exports:function(t,e,n){var r=t("form._form-detect-browser-capabilities"),a=t("main.login-id"),i=t("main.signup-with-passkeys"),o=t("div#passkey-detect-browser-capabilities");if(r||a||i||o){var u=e.isWebAuthnAvailable();t("#webauthn-available").value=u?"true":"false",t("#js-available").value="true",navigator.brave?navigator.brave.isBrave().then(function(e){t("#is-brave").value=e,c()}):c()}function c(){u?e.isWebauthnPlatformAuthenticatorAvailableAsync(n).then(function(e){t("#webauthn-platform-available").value=e?"true":"false",r&&r.submit()}).catch(function(e){t("#webauthn-platform-available").value="false",r&&r.submit()}):(t("#webauthn-platform-available").value="false",r&&r.submit())}}}.exports(i.querySelector,u,i.timeoutPromise),function(){var e={};function u(e,n,r,t,a,i){var o="user-initiated-passkey-challenge",u=n("#allow-passkeys");if(u&&u.value){var c=a("#passkey-config-json");if(c){var l=n(".passkey-begin-button"),s=r.isWebauthnPlatformAuthenticatorAvailableAsync(t),f=n("#username"),d=c,p=new AbortController;d.publicKey.challenge=r.base64URLDecode(d.publicKey.challenge),l&&e(l,function(e){l.disabled=!0,p.abort(o),navigator.credentials.get(d).then(function(e){var t=g(e);s.then(function(e){t.isUserVerifyingPlatformAuthenticatorAvailable=e,h(JSON.stringify(t)),v()})}).catch(function(e){m(e)})}),window.PublicKeyCredential&&window.PublicKeyCredential.isConditionalMediationAvailable&&window.PublicKeyCredential.isConditionalMediationAvailable().then(function(e){if(e){var t=Object.assign({},d,{mediation:"conditional",signal:p.signal});navigator.credentials.get(t).then(function(e){f.blur();var t=g(e);s.then(function(e){t.isUserVerifyingPlatformAuthenticatorAvailable=e,h(JSON.stringify(t)),v()})}).catch(function(e){e!==o&&"AbortError"!==e.name&&i("autofill UI error",e)})}}).catch(function(){})}}function v(){n("form._form-passkey-challenge").submit()}function m(e){var t;n("#action").value="showError::"+(t=e,JSON.stringify({name:t.name,message:t.message,stack:t.stack})),n("form._form-passkey-challenge").submit()}function h(e){n("#passkey").value=e}function g(e){var t={id:e.id,rawId:r.base64URLEncode(e.rawId),type:e.type,response:{clientDataJSON:r.base64URLEncode(e.response.clientDataJSON),authenticatorData:r.base64URLEncode(e.response.authenticatorData),signature:r.base64URLEncode(e.response.signature),userHandle:e.response.userHandle?r.base64URLEncode(e.response.userHandle):null}};return e.authenticatorAttachment&&(t.authenticatorAttachment=e.authenticatorAttachment),t}}return e.exports=function(e,t,n,r,a,i,o){return e(window,"load",function(e){u(t,n,r,a,i,o)}),{configurePasskeys:u}},e.exports}()(i.addEventListener,i.addClickListener,i.querySelector,u,i.timeoutPromise,i.getConfigJson,i.consoleWarn),{exports:function(t,e,n){var r=e(".passkey-hidden-ui"),a=navigator.userAgent.toLowerCase(),i=!!window.safari||a.match(/safari/)&&!a.match(/chrome/)&&!a.match(/chromium/);!r||r.length<=0||(i?r.forEach(function(e){t(e,"passkey-hidden-ui")}):window.PublicKeyCredential&&window.PublicKeyCredential.isConditionalMediationAvailable&&window.PublicKeyCredential.isConditionalMediationAvailable().then(function(e){e?r.forEach(function(e){n(e)}):r.forEach(function(e){t(e,"passkey-hidden-ui")})}).catch(function(e){r.forEach(function(e){t(e,"passkey-hidden-ui")})}))}}.exports(i.removeClass,i.querySelectorAll,i.removeElement),{exports:function(n,e,r,a,i,o,u,c,l,t,s,f){if(f.enable_ulp_wcag_compliance){var d=e("[id^='ulp-container-']");if(d&&d.length){var p=t(_);if(p)for(var v=0;v<d.length;v++)p.observe(d[v],{childList:!0,subtree:!0})}_()}function m(e){var t=e.target,n=o(t);t.value||c(t,"data-autofilled")?a(n,"c79583e74"):i(n,"c79583e74")}function h(e){var t=e.target,n=o(t);a(n,"focus"),y(t,n)}function g(e){var t=e.target,n=o(t);i(n,"focus"),m(e),y(t,n)}function b(e){var t=e.target;l(t,"data-autofilled","")}function w(e){var t=e.target;"onAutoFillStart"===e.animationName&&(l(t,"data-autofilled",!0),dispatchEvent(e.target,"change",!0),r(t,"keyup",b,{once:!0}))}function y(e,t){e.value?a(t,"c79583e74"):i(t,"c79583e74")}function _(){e(".ulp-field").forEach(function(e){if(!u(e,"c7e0fe4c8")){var t=n(e,s);t&&(a(e,"c7e0fe4c8"),y(t,e),setTimeout(function(){y(t,e)},50),t===document.activeElement&&a(e,"focus"),r(t,"change",m),r(t,"focus",h),r(t,"blur",g),r(t,"animationstart",w))}})}}}.exports(i.querySelector,i.querySelectorAll,i.addEventListener,i.addClass,i.removeClass,i.getParent,i.hasClass,i.getAttribute,i.setAttribute,i.createMutationObserver,i.ELEMENT_TYPE_SELECTOR,a),{exports:function(n,e,r,a,i,o,u,t,c,l){if(!l.enable_ulp_wcag_compliance){var s=e("[id^='ulp-container-']");if(s&&s.length){var f=t(g);if(f)for(var d=0;d<s.length;d++)f.observe(s[d],{childList:!0,subtree:!0});g()}}function p(e){var t=e.target,n=o(t);t.value?a(n,"c79583e74"):i(n,"c79583e74")}function v(e){var t=e.target,n=o(t);a(n,"focus"),h(t,n)}function m(e){var t=e.target,n=o(t);i(n,"focus"),h(t,n)}function h(e,t){e.value?a(t,"c79583e74"):i(t,"c79583e74")}function g(){e("[id^='ulp-container-'] .ulp-field").forEach(function(e){if(!u(e,"c7e0fe4c8")){var t=n(e,c);t&&(a(e,"c7e0fe4c8"),h(t,e),setTimeout(function(){h(t,e)},50),t===document.activeElement&&a(e,"focus"),r(t,"change",p),r(t,"focus",v),r(t,"blur",m))}})}}}.exports(i.querySelector,i.querySelectorAll,i.addEventListener,i.addClass,i.removeClass,i.getParent,i.hasClass,i.createMutationObserver,i.ELEMENT_TYPE_SELECTOR,a),{exports:function(r,o,a,i,u,c,l,s,f,d,p,v,t,m,h,e,n,g){if(g.enable_ulp_wcag_compliance){var b=!1,w=e+',input[type="checkbox"]';return F(),[w,y,_,x,E,A,C,S,F]}function y(e){var t=u(e,"data-ulp-validation-function"),n=i(e);return{functionName:t,element:r(n,w),parent:n}}function _(e){var a=[],i=[];return o(e,"[data-ulp-validation-function]").forEach(function(e){var t=y(e),n=[];if(t.element){if("input"===t.element.tagName.toLowerCase()){var r=u(t.element,"type");"checkbox"!==r&&-1===h.indexOf(r)&&n.push("Unsupported input type: "+r)}}else n.push("Could not find element");v[t.functionName]||n.push("Could not find function with name: "+t.functionName),n.length?i=i.concat(n):a.push(e)}),i.length&&t(i.join("\r\n")),a}function x(e,t,n){var r=y(e),a=(0,v[r.functionName])(r.element,t,n);a?s(e,"ulp-validator-error")&&(d(e,"ulp-validator-error"),l(e,"data-is-error")):s(e,"ulp-validator-error")||(f(e,"ulp-validator-error"),c(e,"data-is-error",!0));var i=o(r.parent,".ulp-validator-error");return p(r.parent,"ulp-error",!!i.length),a}function E(t){var n=y(t),e=(u(t,"data-ulp-validation-event-listeners")||"").replace(/\s/g,"").split(",").filter(function(e){return!!e});e.length&&e.forEach(function(e){a(n.element,e,function(){x(t,b,e)})})}function A(e,t,n){b=!0;var r=n.filter(function(e){return!x(e,b,"submit")});if(!r.length)return t.submitter&&"default"==u(t.submitter,"value")&&c(t.submitter,"disabled",!0),void e.submit();m(t);var a=y(r[0]);a.element.focus({preventScroll:!0}),a.parent.scrollIntoView({behavior:"smooth"})}function C(){var t=r('form[data-form-primary="true"]'),n=_(t);0!==n.length&&(n.forEach(function(e){E(e)}),a(t,"submit",function(e){A(t,e,n)}))}function S(){if(n)for(var e in n)n.hasOwnProperty(e)&&(v[e]=n[e])}function F(){var e=r("form[data-disable-html-validations]");e&&(S(),c(e,"novalidate",""),C())}}}.exports(i.querySelector,i.querySelectorAll,i.addEventListener,i.getParent,i.getAttribute,i.setAttribute,i.removeAttribute,i.hasClass,i.addClass,i.removeClass,i.toggleClass,i.globalWindow,i.consoleWarn,i.preventFormSubmit,i.SUPPORTED_INPUT_TYPES,i.ELEMENT_TYPE_SELECTOR,o,a),{exports:function(r,o,a,i,u,c,l,t,s,f,e,n){if(!n.enable_ulp_wcag_compliance){var d=!1,p=e+',input[type="checkbox"]';return y(),[p,v,m,h,g,b,w,y]}function v(e){var t=u(e,"data-ulp-validation-function"),n=i(e);return{functionName:t,element:r(n,p),parent:n}}function m(e){var a=[],i=[];return o(e,"[data-ulp-validation-function]").forEach(function(e){var t=v(e),n=[];if(t.element){if("input"===t.element.tagName.toLowerCase()){var r=u(t.element,"type");"checkbox"!==r&&-1===f.indexOf(r)&&n.push("Unsupported input type: "+r)}}else n.push("Could not find element");l[t.functionName]||n.push("Could not find function with name: "+t.functionName),n.length?i=i.concat(n):a.push(e)}),i.length&&t(i.join("\r\n")),a}function h(e,t,n){var r=v(e),a=(0,l[r.functionName])(r.element,t,n);c(e,"ulp-validator-error",!a);var i=o(r.parent,".ulp-validator-error");return c(r.parent,"ulp-error",!!i.length),a}function g(t){var n=v(t),e=(u(t,"data-ulp-validation-event-listeners")||"").replace(/\s/g,"").split(",").filter(function(e){return!!e});e.length&&e.forEach(function(e){a(n.element,e,function(){h(t,d,e)})})}function b(e,t,n){d=!0;var r=n.filter(function(e){return!h(e,d,"submit")});if(r.length){s(t);var a=v(r[0]);a.element.focus({preventScroll:!0}),a.parent.scrollIntoView({behavior:"smooth"})}else e.submit()}function w(){var t=r('form[data-form-primary="true"]'),n=m(t);0!==n.length&&(n.forEach(function(e){g(e)}),a(t,"submit",function(e){b(t,e,n)}))}function y(){var e=o("[id^='ulp-container-']");e&&e.length&&w()}}}.exports(i.querySelector,i.querySelectorAll,i.addEventListener,i.getParent,i.getAttribute,i.toggleClass,i.globalWindow,i.consoleWarn,i.preventFormSubmit,i.SUPPORTED_INPUT_TYPES,i.ELEMENT_TYPE_SELECTOR,a),{exports:function(e,t,n){function r(n){t(n,"click",function(e){e.preventDefault();var t=document.createElement("input");t.name="action",t.type="hidden",t.value=n.value,n.form.appendChild(t),n.form.submit(),n.form.removeChild(t)})}function a(){e('form button[type="submit"][formnovalidate]').forEach(function(e){r(e)})}return n&&a(),[a,r]}}.exports(i.querySelectorAll,i.addEventListener,i.RUN_INIT),((r={}).exports=function(o,e,u,c,l,s,t,f,n){if(n.enable_ulp_wcag_compliance){var r=e('[class*="aria-error-check"]');if(r&&r.length){var a=t(function(e){e&&e.length&&e.map(function(e){if(e.target&&u(e.target,"aria-error-check")){var t=o('[id="'+c(e.target,"data-ulp-validation-target")+'"');if(t){var n=c(t,"aria-describedby");c(e.target,"data-is-error")?(r=t,a=n,i=e.target.id,a&&-1!==a.search(i)||l(r,"aria-describedby",a?a+" "+i:i),l(r,"aria-invalid",!0)):function(e,t,n){if(t){var r=f(t,n);r.length?l(e,"aria-describedby",r):(s(e,"aria-invalid"),s(e,"aria-describedby"))}else s(e,"aria-invalid"),s(e,"aria-describedby")}(t,n,e.target.id)}}var r,a,i})});a&&r.map(function(e){a.observe(e,{attributes:!0,attributeFilter:["class","data-is-error"]})})}}},r.exports)(i.querySelector,i.querySelectorAll,i.hasClass,i.getAttribute,i.setAttribute,i.removeAttribute,i.createMutationObserver,i.removeAndTrimString,a)}();
+</script>
+</div>
+    
+
+    <footer class="footer">
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://airspacelink.com/privacy-policy-portal"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="ellipse">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="4"
+            height="4"
+            viewBox="0 0 4 4"
+            fill="none"
+          >
+            <circle opacity="0.4" cx="2" cy="2" r="2" fill="#131316" />
+          </svg>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://airspacelink.com/terms-conditions-portal"
+            >Terms of Service</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
